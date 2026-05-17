@@ -69,7 +69,7 @@ Project:
 License:
     MIT License
 Version:
-    Alpha 0.0.1
+    Alpha 0.0.2
 """
 
 from noiseforge.generator import (
@@ -82,7 +82,7 @@ from noiseforge.pngwriter import (
     savepng
 )
 
-__version__ = "Alpha 0.0.1"
+__version__ = "Alpha 0.0.2"
 
 __author__ = "Spakerdev"
 
