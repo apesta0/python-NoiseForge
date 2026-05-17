@@ -166,79 +166,21 @@ All PNG files produced are standards-compliant.
 ```text
 noiseforge/
 │
-├── main.py
+├── CODE_OF_CONDUCT.md
 ├── README.md
+├── SECURITY.md
 │
 ├── noiseforge/
 │   ├── __init__.py
+│   ├── __main__.py
+│   ├── config.py
 │   ├── generator.py
 │   ├── pngwriter.py
+│   ├── preview.py
 │   └── ui.py
 │
-└── outputs/
+└── run.sh
 ```
-
----
-
-# File Explanations
-
-## main.py
-
-Application entry point.
-
-Responsible for launching the graphical interface.
-
----
-
-## noiseforge/__init__.py
-
-Package initialization module.
-
-Contains:
-
-- metadata
-- exports
-- initialization logic
-- package configuration
-
----
-
-## noiseforge/generator.py
-
-Core procedural generation system.
-
-Handles:
-
-- deterministic noise math
-- seed processing
-- repeatable pattern logic
-- grayscale value generation
-
----
-
-## noiseforge/pngwriter.py
-
-Manual PNG encoder.
-
-Handles:
-
-- PNG chunk construction
-- zlib compression
-- binary file writing
-- grayscale formatting
-
----
-
-## noiseforge/ui.py
-
-Tkinter graphical interface.
-
-Handles:
-
-- user input
-- export dialogs
-- controls
-- application window
 
 ---
 
@@ -336,10 +278,14 @@ zlib
 
 # Running NoiseForge
 
-## Method 1
-
 ```bash
 python -m noiseforge
+```
+
+or
+
+```bash
+./run.sh
 ```
 
 ---
@@ -422,7 +368,6 @@ Planned features include:
 - shader pipelines
 - node systems
 - GPU acceleration
-- live previews
 - texture layering
 - procedural terrain generation
 - CLI mode
@@ -435,15 +380,13 @@ Planned features include:
 This project is currently in:
 
 ```text
-Alpha 0.0.1
+Alpha 0.0.2
 ```
 
 Current limitations:
 
 - minimal UI
 - grayscale only
-- no preview window
-- basic noise algorithm
 - limited export settings
 
 Breaking changes are expected between versions.
