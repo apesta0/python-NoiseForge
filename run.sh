@@ -4,4 +4,4 @@
 
 echo "Starting NoiseForge..."
 
-python -m noiseforge
+python3 -m noiseforge
