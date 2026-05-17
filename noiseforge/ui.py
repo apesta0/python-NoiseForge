@@ -131,10 +131,17 @@ repeatcheck.pack(pady=10)
 generatebutton = tk.Button(
     root,
     text="Generate PNG",
-    command=generateimage
+    command=generate_image,
+    width=20,
+    height=2,
+    font=("Arial", 10)
 )
 
-generatebutton.pack(pady=15)
+generatebutton.pack(
+    pady=15,
+    padx=20,
+    fill="x"
+)
 
 
 def run():
