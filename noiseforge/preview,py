@@ -1,0 +1,54 @@
+import tkinter as tk
+
+
+def previewimage(width, height, pixels):
+
+    maxsize = 512
+
+    scale = min(
+        maxsize / width,
+        maxsize / height
+    )
+
+    scale = max(1, int(scale))
+
+    previewwidth = max(1, width * scale)
+    previewheight = max(1, height * scale)
+
+    image = tk.PhotoImage(
+        width=previewwidth,
+        height=previewheight
+    )
+
+    for y in range(previewheight):
+
+        sourcey = min(
+            height - 1,
+            int(y / scale)
+        )
+
+        row = []
+
+        for x in range(previewwidth):
+
+            sourcex = min(
+                width - 1,
+                int(x / scale)
+            )
+
+            value = pixels[sourcey][sourcex]
+
+            color = (
+                f"#{value:02x}"
+                f"{value:02x}"
+                f"{value:02x}"
+            )
+
+            row.append(color)
+
+        image.put(
+            "{" + " ".join(row) + "}",
+            to=(0, y)
+        )
+
+    return image
