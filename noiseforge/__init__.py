@@ -78,8 +78,8 @@ from noiseforge.generator import (
 )
 
 from noiseforge.pngwriter import (
-    create_chunk,
-    save_grayscale_png
+    createchunk,
+    savepng
 )
 
 __version__ = "Alpha 0.0.1"
