@@ -5,7 +5,7 @@
 Version:
 
 ```text
-Alpha 0.0.1
+Alpha 0.0.2
 ```
 
 Author:
@@ -45,6 +45,7 @@ Because NoiseForge is currently in alpha development, only the latest version is
 
 | Version | Supported |
 |---|---|
+| Alpha 0.0.2 | Yes |
 | Alpha 0.0.1 | Yes |
 
 Older versions may contain unresolved bugs or vulnerabilities.
