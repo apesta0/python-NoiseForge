@@ -131,7 +131,7 @@ repeatcheck.pack(pady=10)
 generatebutton = tk.Button(
     root,
     text="Generate PNG",
-    command=generate_image,
+    command=generateimage,
     width=20,
     height=2,
     font=("Arial", 10)
