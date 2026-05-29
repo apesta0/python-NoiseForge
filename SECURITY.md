@@ -11,7 +11,7 @@ Alpha 0.0.2
 Author:
 
 ```text
-Spakerdev
+Alex Pesta
 ```
 
 License:
