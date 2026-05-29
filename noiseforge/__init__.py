@@ -61,7 +61,7 @@ Metadata
 --------
 
 Author:
-    Spakerdev
+    Alex Pesta
 
 Project:
     NoiseForge
@@ -84,7 +84,7 @@ from noiseforge.pngwriter import (
 
 __version__ = "Alpha 0.0.2"
 
-__author__ = "Spakerdev"
+__author__ = "Alex Pesta"
 
 __license__ = "MIT License"
 
