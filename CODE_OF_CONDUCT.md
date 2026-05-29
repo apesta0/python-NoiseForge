@@ -17,7 +17,7 @@ NoiseForge
 Author:
 
 ```text
-Spakerdev
+Alex Pesta
 ```
 
 License:
